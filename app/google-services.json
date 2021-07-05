@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909486415180",
+    "project_id": "akasoschedule-9d3a9",
+    "storage_bucket": "akasoschedule-9d3a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909486415180:android:3d4edb1656f75394e8c3e9",
+        "android_client_info": {
+          "package_name": "com.sseung.akasoschedule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909486415180-5rj6ne9am022fbkghpk2hbsp7u0cl0ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW3h6r6dn8ZjQoJJ2fxZTaTpChP4Wt3l8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909486415180-5rj6ne9am022fbkghpk2hbsp7u0cl0ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

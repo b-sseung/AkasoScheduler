@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.52"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="24.39">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2.69"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="43.39">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/upload_save_background"
+                    android:adjustViewBounds="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.19"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.69"
+                        android:fontFamily="@font/gyeonggititlefmaily"
+                        android:textColor="@color/black"
+                        android:text="스케줄 추가하기"
+                        android:paddingLeft="10dp"
+                        android:autoSizeTextType="uniform"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.27"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.11">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.66"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.18"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.50"/>
+
+                             <TextView
+                                 android:id="@+id/text_date"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="0dp"
+                                 android:layout_weight="1.16"
+                                 android:fontFamily="@font/gyeonggititlefmaily"
+                                 android:textColor="@color/black"
+                                 android:text="일자"
+                                 android:autoSizeTextType="uniform"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.50"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.62"/>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="11.48">
+                            <EditText
+                                android:id="@+id/edit_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:textSize="15dp"
+                                android:inputType="none"
+                                android:gravity="center"
+                                android:textColor="@color/black"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/upload_text_line"
+                                android:layout_gravity="bottom"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.66"/>
+
+                        <LinearLayout
+                            android:id="@+id/click_calendar"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.15">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.50"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.15"
+                                android:src="@drawable/select_calendar"
+                                android:adjustViewBounds="true"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.50"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.67"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.16"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.15">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.66" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.18"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.50"/>
+
+                            <TextView
+                                android:id="@+id/text_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.15"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:textColor="@color/black"
+                                android:text="내용"
+                                android:autoSizeTextType="uniform"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.50"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.62" />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="11.48">
+                            <EditText
+                                android:id="@+id/edit_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:textSize="15dp"
+                                android:imeOptions="actionDone"
+                                android:textColor="@color/black"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/upload_text_line"
+                                android:layout_gravity="bottom"/>
+                        </FrameLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6.48" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.75"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.00">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.66"/>
+
+                        <TextView
+                            android:id="@+id/text_image"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.21"
+                            android:fontFamily="@font/gyeonggititlefmaily"
+                            android:textColor="@color/black"
+                            android:text="이미지"
+                            android:autoSizeTextType="uniform"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="18.55"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.32"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="21.21">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.73"/>
+
+                        <ImageView
+                            android:id="@+id/click_image"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14.96"
+                            android:src="@drawable/upload_click_image"
+                            android:adjustViewBounds="true"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.72"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.23"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3.11">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.97"/>
+
+                       <LinearLayout
+                           android:id="@+id/click_save"
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:layout_weight="4.13">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="0dp"
+                               android:layout_weight="1.00"/>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="0dp"
+                               android:layout_weight="2.13"
+                               android:fontFamily="@font/gyeonggititlefmaily"
+                               android:gravity="center"
+                               android:textColor="@color/black"
+                               android:text="저장"
+                               android:autoSizeTextType="uniform"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="0dp"
+                               android:layout_weight="1.00"/>
+                       </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8.25"/>
+
+                        <LinearLayout
+                            android:id="@+id/click_cancel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="4.13">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.00"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2.13"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:text="취소"
+                                android:autoSizeTextType="uniform"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.00"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.97"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.18"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_layout"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#1A000000"
+                    android:orientation="vertical"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="7.56"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:padding="1dp"
+                        android:background="@color/black"
+                        android:layout_weight="16.96">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <DatePicker
+                                android:id="@+id/datePicker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="10.96"
+                                android:calendarViewShown="false"
+                                android:background="@color/white"
+                                android:clickable="true"
+                                android:datePickerMode="spinner" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2.00"
+                                android:background="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/select_datePicker"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2.00"
+                                android:background="@color/white"
+                                android:text="확인"
+                                android:autoSizeTextType="uniform"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2.00"
+                                android:background="@color/white"/>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="19.00"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2.69"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.52"/>
+    </LinearLayout>
+
+</FrameLayout>

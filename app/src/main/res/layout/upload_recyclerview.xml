@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/upload_recyclerview_background"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.40"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.80">
+
+            <TextView
+                android:id="@+id/upload_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.65"
+                android:gravity="center"
+                android:text="등록일자"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/gyeonggititlefmaily"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/upload_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13.35"
+                android:gravity="center"
+                android:text="내용"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/gyeonggititlefmaily"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/upload_state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.11"
+                android:gravity="center"
+                android:text="상태"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/gyeonggititlefmaily"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.40"/>
+    </LinearLayout>
+</FrameLayout>

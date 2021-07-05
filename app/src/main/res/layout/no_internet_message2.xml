@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="14.62"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="19.53">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.27"/>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20.90">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/message_background"
+                    android:adjustViewBounds="true"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="3.51"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8.52"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:fontFamily="@font/gyeonggititlefmaily"
+                            android:textColor="#191e2d"
+                            android:text="인터넷에 연결되어 있지 않아"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:fontFamily="@font/gyeonggititlefmaily"
+                            android:textColor="#191e2d"
+                            android:text="페이지로 이동할 수 없습니다."
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:fontFamily="@font/gyeonggititlefmaily"
+                            android:textColor="#191e2d"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:fontFamily="@font/gyeonggititlefmaily"
+                            android:textColor="#191e2d"
+                            android:text="데이터 또는 와이파이로"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:fontFamily="@font/gyeonggititlefmaily"
+                            android:textColor="#191e2d"
+                            android:text="인터넷을 연결한 후"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:fontFamily="@font/gyeonggititlefmaily"
+                            android:textColor="#191e2d"
+                            android:text="재실행해주세요."
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="3.39"/>
+                    <TextView
+                        android:id="@+id/click_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.68"
+                        android:gravity="center"
+                        android:fontFamily="@font/gyeonggititlefmaily"
+                        android:textColor="#191e2d"
+                        android:text="확인"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="1dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.43"/>
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.26"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="14.62"/>
+    </LinearLayout>
+</FrameLayout>

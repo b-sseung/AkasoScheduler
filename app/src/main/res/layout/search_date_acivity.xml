@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/base_background"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/half_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.02"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.80">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="24.71"/>
+                    <ImageView
+                        android:id="@+id/close_datePicker"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.81"
+                        android:src="@drawable/close_image"
+                        android:adjustViewBounds="true"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.91"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.45"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="14.33"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.74"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2.21"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.83"/>
+                            <EditText
+                                android:id="@+id/edit_year"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4.44"
+                                android:gravity="center"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:autoSizeTextType="uniform"
+                                android:inputType="number"
+                                android:imeOptions="actionNext"
+                                android:background="@drawable/calendar_long_edit"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.53"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.14"
+                                android:gravity="center"
+                                android:src="@drawable/year_text"
+                                android:adjustViewBounds="true"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.53"/>
+                            <EditText
+                                android:id="@+id/edit_month"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.92"
+                                android:gravity="center"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:autoSizeTextType="uniform"
+                                android:inputType="number"
+                                android:imeOptions="actionNext"
+                                android:background="@drawable/calendar_short_edit"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.53"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.14"
+                                android:gravity="center"
+                                android:src="@drawable/month_text"
+                                android:adjustViewBounds="true"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.53"/>
+                            <EditText
+                                android:id="@+id/edit_day"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.92"
+                                android:gravity="center"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:autoSizeTextType="uniform"
+                                android:inputType="number"
+                                android:imeOptions="actionDone"
+                                android:background="@drawable/calendar_short_edit"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.53"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.14"
+                                android:gravity="center"
+                                android:src="@drawable/day_text"
+                                android:adjustViewBounds="true"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.10"/>
+                            <ImageView
+                                android:id="@+id/choice_date"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.26"
+                                android:src="@drawable/select_calendar"
+                                android:adjustViewBounds="true"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.88"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6.06">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.83"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="19.72"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.24"/>
+                                <TextView
+                                    android:id="@+id/message1"
+                                    android:visibility="invisible"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.86"
+                                    android:textColor="#FF0000"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/gyeonggititlefmaily"
+                                    android:text="* 연도는 최소 1994년 이후부터 입력이 가능합니다."/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.62"/>
+                                <TextView
+                                    android:id="@+id/message2"
+                                    android:visibility="invisible"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.86"
+                                    android:textColor="#FF0000"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/gyeonggititlefmaily"
+                                    android:text="* 연도는 최소 1994년 이후부터 입력이 가능합니다."/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.62"/>
+                                <TextView
+                                    android:id="@+id/message3"
+                                    android:visibility="invisible"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.86"
+                                    android:textColor="#FF0000"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/gyeonggititlefmaily"
+                                    android:text="* 연도는 최소 1994년 이후부터 입력이 가능합니다."/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3.00"/>
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.06"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <DatePicker
+                        android:id="@+id/datePicker"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:calendarViewShown="false"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:datePickerMode="spinner" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.57"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.76">
+                    <TextView
+                        android:id="@+id/clear_datePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/gyeonggititlefmaily"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/white"
+                        android:text="이동하기"/>
+                    <TextView
+                        android:id="@+id/select_datePicker"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/gyeonggititlefmaily"
+                        android:autoSizeTextType="uniform"
+                        android:clickable="true"
+                        android:background="@color/white"
+                        android:text="선택 완료"/>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="5.78"/>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

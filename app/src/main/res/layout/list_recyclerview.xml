@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/list_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/list_background"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.32">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/date_top_background"
+                android:adjustViewBounds="true"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_default="percent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:src="@drawable/date_base_background"
+                    android:adjustViewBounds="true"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    app:layout_constraintWidth_default="percent"
+                    app:layout_constraintHeight_default="percent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/date_day_background"
+                            android:adjustViewBounds="true"/>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/list_recycler_day"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:autoSizeMinTextSize="1dp"
+                                android:autoSizeTextType="uniform"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="#000000"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintHeight_default="percent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/date_middle_background"
+                        android:adjustViewBounds="true"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/date_yymm_background"
+                            android:adjustViewBounds="true"/>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/list_recycler_year"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:autoSizeMinTextSize="1dp"
+                                android:autoSizeTextType="uniform"
+                                android:fontFamily="@font/gyeonggititlefmaily"
+                                android:gravity="center"
+                                android:text="2021. 3"
+                                android:textColor="#8d8d8d"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintHeight_default="percent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="14.94">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/name_top_background"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.51"/>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14.43">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/name_background"
+                        android:adjustViewBounds="true"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/list_recycler_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:autoSizeMinTextSize="1dp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="left"
+                            android:text="아카소 에이지 27살 생일"
+                            android:textColor="#000000"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHeight_default="percent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.17">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_top_background"
+                android:adjustViewBounds="true"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time_background"
+                    android:adjustViewBounds="true"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:id="@+id/list_recycler_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:autoSizeMinTextSize="1dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/gyeonggititlefmaily"
+                        android:gravity="left"
+                        android:text="00:00~"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHeight_default="percent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
