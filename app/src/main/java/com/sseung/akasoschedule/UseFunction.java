@@ -191,4 +191,23 @@ public class UseFunction {
     public static void addUploadList(int number, Upload_Item item){
         upload_list.put(number, item);
     }
+
+    public static int loadDayCount(Schedule_Item item) {
+        int year = item.getYear();
+        int month = item.getMonth();
+        int day = item.getDay();
+
+        ScheduleDatabase database = ScheduleDatabase.getInstance(UseFunction.mainContext);
+
+        String sql = "select number "
+                + "from " + ScheduleDatabase.TABLE1 + " where year = " + year + " and month = " + month + " and day = " + day
+                + " order by year desc, month desc, day desc";
+
+        Log.d("database", sql);
+
+        Cursor cursor = database.rawQuery(sql);
+        int recordCound = cursor.getCount();
+
+        return recordCound;
+    }
 }

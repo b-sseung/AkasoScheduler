@@ -1,6 +1,9 @@
 package com.sseung.akasoschedule;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.util.Log;
@@ -29,8 +32,11 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
+
+import static android.content.Context.ALARM_SERVICE;
 
 public class FireBaseFunction {
 
@@ -134,6 +140,10 @@ public class FireBaseFunction {
                         Schedule_Item item = new Schedule_Item(year, month, day, division, detail, name, time, image, uri, sale, source);
                         UseFunction.addData(number, item);
 
+                        if (UseFunction.loadDayCount(item) == 1) {
+                            Log.d("tlqkf2", "추가하기1");
+                            setAlarm(item);
+                        }
                     } else {
                         Schedule_Item item = map.get(Integer.toString(number));
 
@@ -148,7 +158,14 @@ public class FireBaseFunction {
 
                             Schedule_Item temp = new Schedule_Item(year, month, day, division, detail, name, time, image, uri, sale, source);
                             UseFunction.updateData(number, temp);
+
+                            if (UseFunction.loadDayCount(temp) == 1) {
+                                Log.d("tlqkf2", "추가하기2");
+                                setAlarm(temp);
+                            }
                         }
+
+
                     }
                 }
             }
@@ -214,5 +231,24 @@ public class FireBaseFunction {
                 Log.d("tlqkf", "이미지 업로드 성공");
             }
         });
+    }
+
+    public static void setAlarm(Schedule_Item item){
+        int year = item.getYear();
+        int month = item.getMonth() - 1;
+        int day = item.getDay();
+        Calendar cal1 = Calendar.getInstance();
+        Log.d("tlqkf2", cal1.get(Calendar.YEAR) + ", " + cal1.get(Calendar.MONTH) + ", " + cal1.get(Calendar.DAY_OF_MONTH));
+        Calendar cal2 = Calendar.getInstance();
+
+        cal1.set(year,month, day, 17, 53);
+        Log.d("tlqkf2", cal1.get(Calendar.YEAR) + ", " + cal1.get(Calendar.MONTH) + ", " + cal1.get(Calendar.DAY_OF_MONTH));
+        AlarmManager alarmManager = (AlarmManager) UseFunction.mainContext.getSystemService(ALARM_SERVICE);
+        Intent receiverIntent = new Intent(UseFunction.mainContext, BroadCast.class);
+
+        long time = cal1.getTimeInMillis();
+        receiverIntent.putExtra("time", time);
+        PendingIntent pending = PendingIntent.getBroadcast(UseFunction.mainContext, 1, receiverIntent, 0);
+        alarmManager.set(AlarmManager.RTC, time, pending);
     }
 }
