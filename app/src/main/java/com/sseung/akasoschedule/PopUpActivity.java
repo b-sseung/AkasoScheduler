@@ -62,21 +62,21 @@ public class PopUpActivity extends Activity {
 
         checkbox = findViewById(R.id.checkbox);
 
-        videoView = findViewById(R.id.video);
+//        videoView = findViewById(R.id.video);
 
-        MediaController controller = new MediaController(this);
-        videoView.setMediaController(controller);
-
-        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video2);
-        videoView.setVideoURI(videoUri);
-
-        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                videoView.seekTo(0);
-                videoView.start();
-            }
-        });
+//        MediaController controller = new MediaController(this);
+//        videoView.setMediaController(controller);
+//
+//        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video2);
+//        videoView.setVideoURI(videoUri);
+//
+//        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+//            @Override
+//            public void onPrepared(MediaPlayer mp) {
+//                videoView.seekTo(0);
+//                videoView.start();
+//            }
+//        });
 
         click_checkbox.setOnClickListener(new View.OnClickListener() {
             @Override
