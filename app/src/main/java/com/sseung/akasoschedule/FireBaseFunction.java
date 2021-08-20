@@ -1,4 +1,4 @@
-package com.sseung.akasoschedule;
+  package com.sseung.akasoschedule;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -142,7 +142,7 @@ public class FireBaseFunction {
 
                         if (UseFunction.loadDayCount(item) == 1) {
                             Log.d("tlqkf2", "추가하기1");
-                            setAlarm(item);
+                            setAlarm(item, number);
                         }
                     } else {
                         Schedule_Item item = map.get(Integer.toString(number));
@@ -161,7 +161,7 @@ public class FireBaseFunction {
 
                             if (UseFunction.loadDayCount(temp) == 1) {
                                 Log.d("tlqkf2", "추가하기2");
-                                setAlarm(temp);
+                                setAlarm(temp, number);
                             }
                         }
 
@@ -233,22 +233,26 @@ public class FireBaseFunction {
         });
     }
 
-    public static void setAlarm(Schedule_Item item){
+    public static void setAlarm(Schedule_Item item, int number){
         int year = item.getYear();
         int month = item.getMonth() - 1;
         int day = item.getDay();
-        Calendar cal1 = Calendar.getInstance();
-        Log.d("tlqkf2", cal1.get(Calendar.YEAR) + ", " + cal1.get(Calendar.MONTH) + ", " + cal1.get(Calendar.DAY_OF_MONTH));
-        Calendar cal2 = Calendar.getInstance();
 
-        cal1.set(year,month, day, 17, 53);
+        Calendar now = Calendar.getInstance();
+        Calendar cal1 = Calendar.getInstance();
+        cal1.set(year,month, day, 00, 01);
+
+        if (now.getTime().compareTo(cal1.getTime()) > 0) {
+            return;
+        }
+
         Log.d("tlqkf2", cal1.get(Calendar.YEAR) + ", " + cal1.get(Calendar.MONTH) + ", " + cal1.get(Calendar.DAY_OF_MONTH));
         AlarmManager alarmManager = (AlarmManager) UseFunction.mainContext.getSystemService(ALARM_SERVICE);
         Intent receiverIntent = new Intent(UseFunction.mainContext, BroadCast.class);
 
         long time = cal1.getTimeInMillis();
         receiverIntent.putExtra("time", time);
-        PendingIntent pending = PendingIntent.getBroadcast(UseFunction.mainContext, 1, receiverIntent, 0);
+        PendingIntent pending = PendingIntent.getBroadcast(UseFunction.mainContext, number, receiverIntent, 0);
         alarmManager.set(AlarmManager.RTC, time, pending);
     }
 }
