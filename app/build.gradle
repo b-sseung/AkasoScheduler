@@ -10,8 +10,8 @@ android {
         applicationId "com.sseung.akasoschedule"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 6
-        versionName "6.0"
+        versionCode 7
+        versionName "7.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
