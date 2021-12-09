@@ -152,6 +152,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
                         <TextView
                             android:id="@+id/list_recycler_name"
                             android:layout_width="match_parent"
@@ -161,9 +162,11 @@
                             android:gravity="left"
                             android:text="아카소 에이지 27살 생일"
                             android:textColor="#000000"
-                            app:layout_constraintTop_toTopOf="parent"
+                            android:fontFamily="@font/squareplus_font"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintHeight_default="percent" />
+                            app:layout_constraintHeight_default="percent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
 

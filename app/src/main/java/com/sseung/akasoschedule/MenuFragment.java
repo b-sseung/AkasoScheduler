@@ -50,8 +50,8 @@ public class MenuFragment extends Fragment {
 
         Calendar calendar = Calendar.getInstance();
 
-        Date date1 = new Date(2021, 06, 16);
-        Date date2 = new Date(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH));
+        Date date1 = new Date(2022, 3, 8);
+        Date date2 = new Date(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH) , calendar.get(Calendar.DAY_OF_MONTH));
 
         long time = (date1.getTime() - date2.getTime()) / (24 * 60 * 60 * 1000);
         Log.d("tlqkf", "지난 시간 : " + time);

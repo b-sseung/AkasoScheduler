@@ -113,6 +113,8 @@ public class Schedule_Adapter extends RecyclerView.Adapter<Schedule_Adapter.View
                 } else if (item.getDetail().equals("잡지")) {
                     Log.d("tlqkf", "sale");
                     time.setText(item.getSale());
+                } else {
+                    time.setText("");
                 }
             }
 
